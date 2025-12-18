@@ -3,54 +3,212 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Our Love Story ❤️</title>
+    <title>Happy Birthday, Anu 💖</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500;600&family=Pacifico&display=swap"
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Short+Stack&family=Homemade+Apple&display=swap"
     />
-    <link rel="stylesheet" href="./kk.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
-
   <body>
-    <div class="paper heart"></div>
-
-    <div class="paper image">
-      <p>Anushika — Happy Birthday &amp; 1 Year Together! 🎂❤️</p>
-      <p>30th December — a year of love, two reasons to celebrate 💫</p>
-      <img src="1.jpeg.jpg" alt="Anushika happy moment" />
+    <div class="loading-screen" id="loadingScreen">
+      <div class="heartbeat"></div>
+      <p>Cinematic magic warming up for Anu 💕</p>
     </div>
 
-    <div class="paper image">
-      <p>365 days of memories, smiles, and endless love</p>
-      <img src="3.jpeg.jpg" alt="Memories collage" />
+    <div class="for-you-note hidden" id="forYouNote">
+      <p>For you, Anu 💕 — keep this open whenever you miss me.</p>
+      <button id="forYouClose">Keep it safe</button>
     </div>
 
-    <div class="paper image">
-      <p>Thank you for being my greatest gift — happy birthday to my love</p>
-      <p>You make every moment magical ✨</p>
-      <img src="2.jpeg.jpg" alt="Celebration photo" />
-    </div>
+    <div class="background-glow"></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="floating-hearts" aria-hidden="true"></div>
 
-    <div class="paper red">
-      <p class="p1">Happy Birthday &amp; Our 1st Anniversary!</p>
-      <p class="p2">One year of forever with you — forever to go 💕</p>
-    </div>
+    <section class="intro" id="intro">
+      <div class="intro__content">
+        <p class="whisper">Hey Anu... 💖</p>
+        <p class="whisper delay">Someone has something special for you</p>
+        <button class="primary-button" id="beginJourney">
+          Tap to Begin 🎁
+        </button>
+      </div>
+    </section>
 
-    <div class="paper">
-      <p class="p1">
-        You are my favorite chapter — the one I want to reread forever
-      </p>
-      <p class="p1">
-        Forever yours <span style="color: red !important">❤️</span>
-      </p>
-    </div>
+    <main id="journey" class="hidden">
+      <section class="hero story-section slow" id="hero">
+        <div class="hero__text">
+          <p class="date-stamp">30 · 10 · 2024</p>
+          <p class="eyebrow">A Love Story in Moments</p>
+          <h1>Our little universe</h1>
+          <p class="lede">
+            A cinematic walk through the memories, the butterflies, the
+            laughter, and the forever promises we forged together, Anu 💕.
+          </p>
+          <a class="ghost-button" href="#timeline">Start the story ↓</a>
+        </div>
+      </section>
 
-    <div class="paper">
-      <p class="p1">
-        Drag these notes to feel my love for you — today and always
-      </p>
-    </div>
+      <section class="timeline story-section slow" id="timeline">
+        <p class="chapter-tag">Chapter 01 · The Spark</p>
+        <h2>The Memory Timeline</h2>
+        <div class="milestones">
+          <article class="milestone" data-year="Class 10">
+            <img src="./assets/images/anu1.jpg" alt="Class 10" loading="lazy" />
+            <div>
+              <h3>The First Spark</h3>
+              <p>
+                "The first time I saw you… my heart discovered its very first
+                crush."
+              </p>
+            </div>
+          </article>
+          <article class="milestone" data-year="Class 11">
+            <img src="./assets/images/anu2.jpg" alt="Class 11" loading="lazy" />
+            <div>
+              <h3>Best Friends Forever</h3>
+              <p>
+                "Somewhere between jokes and secrets, we became inseparable best
+                friends."
+              </p>
+            </div>
+          </article>
+          <article class="milestone" data-year="30 Oct 2024">
+            <img
+              src="./assets/images/anu3.jpg"
+              alt="Relationship"
+              loading="lazy"
+            />
+            <div>
+              <h3>Everything Changed</h3>
+              <p>
+                "30th October 2024 — the day friendship bloomed into something
+                eternally magical."
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <script src="./kk.js"></script>
+      <section class="photo-magic story-section" id="magic">
+        <p class="chapter-tag">Chapter 02 · Fragments of Joy</p>
+        <h2>Moments that glow</h2>
+        <p class="lede">Tap the polaroids for mini love notes.</p>
+        <div class="polaroid-grid">
+          <div class="polaroid" data-note="How can someone be this pretty?">
+            <img
+              src="./assets/images/anu4.jpg"
+              alt="Smiling Anu"
+              loading="lazy"
+            />
+            <span>My favorite view</span>
+          </div>
+          <div class="polaroid" data-note="Your smile = instant happiness">
+            <img src="./assets/images/anu5.jpg" alt="Laughing" loading="lazy" />
+            <span>Butterfly giggles</span>
+          </div>
+          <div class="polaroid" data-note="Every photo, a heartbeat">
+            <img src="./assets/images/anu6.jpg" alt="Elegant" loading="lazy" />
+            <span>Pure grace</span>
+          </div>
+        </div>
+        <div class="polaroid-note" id="polaroidNote">Tap a photo 💕</div>
+      </section>
+
+      <section class="surprise story-section slow" id="surprise">
+        <div class="surprise__content">
+          <p class="chapter-tag">Chapter 03 · Suspense</p>
+          <h2>I have something to tell you...</h2>
+          <div class="lock-box" id="lockBox">
+            <div class="ribbon"></div>
+            <p>Open 💌</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="letter hidden story-section slow" id="letter">
+        <p class="chapter-tag">Chapter 04 · Heartfelt Truths</p>
+        <div class="letter__inner">
+          <p>Happy Birthday, my love 💖</p>
+          <p>
+            Anu, you are the most special person in my life. I still remember
+            the first time I saw you back in the last months of class 10 — that
+            was when my heart found its first crush.
+          </p>
+          <p>
+            By 11th, we became best friends, and that friendship slowly turned
+            into something truly magical.
+          </p>
+          <p>
+            On 30th October 2024, when we came into a relationship, everything
+            in my life changed. You brought happiness, peace, and so much love
+            into my world.
+          </p>
+          <p>
+            You mean everything to me — my life, my peace, and my whole
+            universe.
+          </p>
+          <p>
+            I’m the luckiest person to have you by my side. I love you so much,
+            Anu 💞
+          </p>
+        </div>
+      </section>
+
+      <section class="fun story-section fast" id="fun">
+        <p class="chapter-tag">Chapter 05 · Laughs & Play</p>
+        <h2>Playful Love Zone</h2>
+        <div class="fun__grid">
+          <div class="quiz card">
+            <h3>How well do I know you?</h3>
+            <p class="question">Your favorite comfort food is...</p>
+            <div class="options">
+              <button data-correct="false">Cheesy pizza</button>
+              <button data-correct="true">Mom's homemade paratha</button>
+              <button data-correct="false">Chocolate donuts</button>
+            </div>
+            <p class="quiz-result" id="quizResult">Take a guess!</p>
+          </div>
+          <div class="love-meter card">
+            <h3>Love Meter</h3>
+            <p>Tap hearts to fill it up</p>
+            <div class="meter">
+              <div class="meter__fill" id="meterFill"></div>
+            </div>
+            <button id="heartButton">💗</button>
+            <p class="secret-message hidden" id="secretMessage">
+              Secret unlocked: Anu 💕 owns my whole galaxy.
+            </p>
+          </div>
+          <div class="surprise-card card">
+            <h3>Click for a Surprise 😘</h3>
+            <button id="surpriseButton">Reveal</button>
+            <p id="surpriseMessage">I bet you'll smile!</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="finale story-section slow" id="finale">
+        <p class="chapter-tag">Finale · Forever</p>
+        <h2>Once again... Happy Birthday Anu 🎂💖</h2>
+        <p>Forever yours ❤️</p>
+        <button class="ghost-button replay-button" id="replayJourney">
+          Replay the Journey
+        </button>
+        <canvas id="fireworks"></canvas>
+      </section>
+    </main>
+
+    <div class="floating-note hidden" id="floatingNote">For You, Anu 💕</div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-3guPmyAnbcW2CYwiVdc+GqOR/mdrIW6DCeA44yWiNysGEKMluSleqrs9jwELyhl725LLJoPLD114F8nGMD4Plg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
